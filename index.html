@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sactech Control System - Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="logo" onclick="window.location.href='#home'">Sactech</div>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div></div><div></div><div></div>
+  </div>
+  <ul id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)">Services ▼</a>
+      <div class="dropdown-content">
+        <a href="#plc">PLC Assembling & Wiring</a>
+        <a href="#panel">Control Panel Manufacturing</a>
+        <a href="#turnkey">Turnkey Project Installation</a>
+        <a href="#automation">Industrial Automation Solutions</a>
+      </div>
+    </li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#login">Login / Register</a></li>
+  </ul>
+</nav>
+
+<!-- Home Hero Section -->
+<section id="home">
+  <div>
+    <h1>Sactech Control System</h1>
+    <p>Powering Industries with Smart Automation & Electrical Solutions</p>
+  </div>
+  <canvas id="electricCanvas"></canvas>
+</section>
+
+<!-- Other Sections -->
+<section id="about">About Us Section</section>
+<section id="plc">PLC Assembling & Wiring Section</section>
+<section id="panel">Control Panel Manufacturing Section</section>
+<section id="turnkey">Turnkey Project Installation Section</section>
+<section id="automation">Industrial Automation Section</section>
+<section id="projects">Projects Section</section>
+
+<!-- Login Section -->
+<section id="login">
+  <h2>Login / Register</h2>
+  <input id="username" type="text" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="loginUser()">Login</button>
+  <p id="loginMsg"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
